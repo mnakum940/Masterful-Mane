@@ -1,0 +1,712 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+
+.navbar{
+    position: static;
+    background-color: #151515;
+    /* left: 0;
+    top: 0; */
+    width: 100%;
+    height: 75px;
+    padding: 30px;
+    /* background: #2980b9; */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.leftNav{
+    position: absolute;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.leftNav a{
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0;
+    /* color: aliceblue; */
+}
+
+.rightNav{
+    right: 40px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+    text-align: right;
+    /* height: 75px; */
+}
+
+.rightNav li{
+    list-style: none;
+    margin: 0;
+    padding: 5px 40px;
+    
+}
+
+.rightNav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.rightNav li a:hover{
+    color: red;
+    transition: .5s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: #f7f7f7;
+}
+
+
+#home{
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: fixed url("../assets/Home.jpg");
+}
+#home h1{
+    font-family: Anton;
+    font-size: 140px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+}
+
+#home h6{
+    padding-top: 20px;
+    padding-bottom: px;
+    font-size: 20px;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 6px;
+
+}
+
+.book-appointment{
+    width: 200px;
+    height: 50px;
+    background-color: #53301A;
+    color: #f7f7f7;
+    border: 4px solid #f2f2f2;
+    border-radius: 15px;
+    cursor: pointer;
+    src: url("../appointment.html");
+}
+
+.book-appointment a{
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 19px;
+}
+
+.book-appointment:hover{
+    background-color: #f2f2f2;
+    border: 4px solid #53301A;
+    transition: .5s;
+}
+.book-appointment a:hover{
+    color: #53301A;
+}
+
+#information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: fixed url(../assets/information-bg.jpg);
+}
+.more-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-info .text-info{
+    width: 50%;
+    padding: 60px;
+
+}
+.more-info .text-info p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.more-info .photo-info{
+    width: 19%;
+    height: 400px;
+    /*background: scroll url("../assets/photo-info.jpg"); */
+    background: url("../assets/photo-info.jpg") center/cover no-repeat;
+}
+
+footer{
+    height: 55vh;
+    background-color: #828282;
+}
+
+.footer .top-footer{
+    height: 50vh;
+    background-color: #43210d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .top-footer .footer-item{
+    padding: 50px;
+}
+
+.footer .top-footer .footer-item p{
+    font-size: 20px;
+    margin: 40px;
+    text-align: center;
+}
+
+.footer .top-footer .footer-item  h1{
+    font-family: Anton;
+    font-size: 70px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+    color: #f7f7f7;
+}
+
+.footer .top-footer .footer-item p a{
+    margin: 30px 0;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.footer .bottom-footer{
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .bottom-footer p{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#TimeHead{
+    align-items: center;
+    justify-content: center;
+    background: fixed url("../assets/timing-bg.jpg");
+}
+
+#TimeHead h1{
+    color: #151515;
+    font-size: 140px;
+    font-family: Anton;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+}
+
+#TimeHead h6{
+    color: #151515;
+    font-size: 15px;
+    padding: 50px;
+}
+
+#Timings{
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide the section into three equal columns */
+    gap: 20px; /* Adjust the gap between the columns */
+    background: #f2f2f2;
+    background: fixed url("../assets/Timing.jpg") no-repeat;
+}
+
+
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 20px;
+  }
+  
+  .grid-item p{
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+  }
+
+#Appointment{
+    background-image: url(../assets/Appointment.jpg);
+    justify-content: center;
+    align-items: center;
+}
+#Appointment h1{
+    transition: .5s;
+    font-size: 140px;
+    font-family: Anton;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+}
+
+#Appointment h6{
+    transition: .5s;
+    padding: 60px;
+    font-size: 15px;
+}
+
+
+.book{
+    justify-content: center;
+    align-items: center;
+}
+.book .login-box{
+    width: 700px;
+    padding: 40px;
+    background: linear-gradient(#bf754a,#522916);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0 , 0, 6);
+    border-radius: 10px;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.login-box .user-box{
+    position: relative;
+}
+
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #ffc09c;
+  font-size: 12px;
+}
+
+.user-box select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box select option{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box textarea{
+    width: 100%;
+    padding: px 0;
+    font-size: 16px;
+    color: #f7f7f7;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .submit{
+    width: 120px;
+    height: 35px;
+    background: transparent;
+    color: #f7f7f7;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.login-box .submit:hover{
+    transition: .5s;
+    border: 0;
+    background: #ffc09c;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffc09c,0 0 25px #ffc09c,0 0 50px #ffc09c,0 0 100px #ffc09c;
+}
+
+.About{
+    background: fixed url("../assets/about-bg.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+.About h1{
+    font-size: 140px;
+    font-family: Anton;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+}
+.About h6{
+    padding: 60px;
+    font-size: 20px;
+}
+
+.mission{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main-div{
+    display: block;
+}
+.mission h1{
+    font-size: 50px;
+    text-align: center;
+    color: #151515;
+    font-family: Anton;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+
+}
+.main-div .mission-div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 50px;
+    line-height: 30px;
+}
+
+.main-div .mission-div p{
+    margin: 0 20px;
+    color: #151515;
+    width: 50%;
+    text-align: justify;
+    padding: 0px;
+}
+
+.main-div .mission-div img{
+    
+}
+
+.about-background{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-background .back-div{
+    align-items: center;
+    display: flex;
+}
+.about-background .back-div button{
+    text-align: right;
+    font-size: 90px;
+    padding-right: 30px;
+    font-family: Anton;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 44.1px;
+    width: 40%;
+    height: 80vh;
+    background-color: transparent;
+    border: 0;
+    border-right: 5px solid brown;
+}
+.about-background .back-div p{
+    padding: 30px;
+    padding-right: 140px;
+    line-height: 26px;
+    text-align: justify;
+    color: #151515;
+    width: 60%;
+}
+
+
+
+@media only screen and (max-width: 1107px){
+    .rightNav{
+        transition: 1s;
+        text-align: center;
+        flex-direction: column;
+    }
+    .rightNav li{
+        padding: 25px;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 350px;
+        transition: all 0.7s ease-out;
+        background-color: rgba(17, 17, 17, 0.841);
+    }
+    .leftNav{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .nav-list{
+        opacity: 1;
+    }
+    #home h1{
+        transition: .5s;
+        font-size: 80px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #home h6 {
+        transition: .5s;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #Timings{
+        transition: .5s;
+        height: 215vh;
+        display: block;
+    }
+
+    #TimeHead h1{
+        transition: .5s;
+        font-size: 100px;
+    }
+    
+    #TimeHead h6{
+        transition: .5s;
+        font-size: 12px;
+    }
+
+    .grid-item{
+        transition: .5s;
+        margin: 20px;
+        padding: 10px 0px;
+    }
+    .book-appointment{
+        margin: 20px 0;
+    }
+    #information{
+        height: 180vh;
+        background: fixed url("../assets/information-bg.jpg");
+    }
+
+    .more-info .text-info{
+        width: 100%;
+    }
+    .more-info .photo-info{
+        width: 0%;
+    }
+    footer{
+        transition: .5s;
+        width: 100%;
+        height: 135vh;
+    }
+    .footer .top-footer{
+        transition: .5s;
+        height: 126vh;
+        display: block;
+
+    }
+    .footer .top-footer .footer-item{
+        transition: .5s;
+        padding: 20px;
+    }
+    .footer .top-footer .footer-item h1{
+        font-size: 80px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #Appointment h1{
+        transition: .5s;
+        font-size: 80px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #Appointment h6{
+        transition: .5s;
+        font-size: 13px;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .book .login-box{
+        transition: .5s;
+        width: 300px;
+        /* height: 100%; */
+        padding: 20px;
+        background: linear-gradient(#bf754a, #522916);
+    }
+
+    #About h1{
+        font-size: 80px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    #About h6{
+        font-size: 18px;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .mission{
+        height: 220vh;
+    }
+    .mission .main-div .mission-div{
+        margin: 0 20px;
+        align-items: center;
+        justify-content: center;
+        /* display: block; */
+        flex-direction: column;
+        padding: 0;
+    }
+    .mission h1{
+        font-size: 40px;
+    }
+    .main-div .mission-div p{
+        width: 100%;
+        font-size: 20px;
+        padding-right: 0;
+        line-height: 26px;
+        text-align: left;
+        margin: 20px 0;
+        /* font-size: 10px; */
+        line-height: 24px;
+    }
+
+    .about-background{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 230vh;
+    }
+    .about-background .back-div{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-background .back-div button{
+        font-size: 40px;
+        text-align: center;
+        border-bottom: 3px solid #43210d;
+        border-right: 0;
+        width: 100%;
+        height: 40px;
+        padding-right: 0;
+        font-weight: 0;
+        line-height: 0;
+    }
+    .about-background .back-div p{
+        width: 100%;
+        font-size: 20px;
+        padding-right: 0;
+        padding-left: 0;
+        padding: 20px;
+        line-height: 26px;
+        text-align: left;
+    }
+}
+
+
