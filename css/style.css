@@ -80,7 +80,7 @@ body{
 section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     color: #f7f7f7;
 }
@@ -166,7 +166,7 @@ section {
 }
 .more-info .text-info{
     width: 50%;
-    padding: 60px;
+    padding: 20px;
 
 }
 .more-info .text-info p{
@@ -182,12 +182,12 @@ section {
 }
 
 footer{
-    height: 55vh;
+    max-height: 65vh;
     background-color: #828282;
 }
 
 .footer .top-footer{
-    height: 50vh;
+    max-height: 50vh;
     background-color: #43210d;
     display: flex;
     justify-content: center;
@@ -561,7 +561,6 @@ footer{
 
     #Timings{
         transition: .5s;
-        height: 215vh;
         display: block;
     }
 
@@ -584,7 +583,7 @@ footer{
         margin: 20px 0;
     }
     #information{
-        height: 180vh;
+        /* min-height: 180vh; */
         background: fixed url("../assets/information-bg.jpg");
     }
 
@@ -597,27 +596,34 @@ footer{
     footer{
         transition: .5s;
         width: 100%;
-        height: 135vh;
     }
     .footer .top-footer{
         transition: .5s;
-        height: 126vh;
         display: block;
 
     }
     .footer .top-footer .footer-item{
         transition: .5s;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .footer .top-footer .footer-item p{
+        margin: 10px;
+        font-size: calc(0.9rem + .1vw);
     }
     .footer .top-footer .footer-item h1{
-        font-size: 80px;
+        font-size: calc(2rem + .6vw);
         text-align: center;
         line-height: 1.2;
     }
 
+    .footer .bottom-footer p{
+        font-size: calc(0.9rem + .3vw);
+    }
+
     #Appointment h1{
         transition: .5s;
-        font-size: 80px;
+        font-size: calc(4rem + .6vw);
         text-align: center;
         line-height: 1.2;
     }
@@ -633,7 +639,7 @@ footer{
 
     .book .login-box{
         transition: .5s;
-        width: 300px;
+        width: 260px;
         /* height: 100%; */
         padding: 20px;
         background: linear-gradient(#bf754a, #522916);
@@ -651,11 +657,13 @@ footer{
         margin-bottom: 10px;
         text-align: center;
     }
+
+
     .mission{
-        height: 220vh;
+        padding: 20px;
     }
     .mission .main-div .mission-div{
-        margin: 0 20px;
+        margin: 0 10px;
         align-items: center;
         justify-content: center;
         /* display: block; */
@@ -670,9 +678,9 @@ footer{
         font-size: 20px;
         padding-right: 0;
         line-height: 26px;
-        text-align: left;
+        text-align: justify;
         margin: 20px 0;
-        /* font-size: 10px; */
+        font-size: calc(0.9rem +.3vw);
         line-height: 24px;
     }
 
@@ -680,7 +688,7 @@ footer{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 230vh;
+        padding-top: 20px;
     }
     .about-background .back-div{
         display: block;
